@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui, shrink-to-fit=yes">
+      <title>frogie's arcade v3 beta</title>
+      <link href="/styles.css" rel="stylesheet" type="text/css" />
+      <link href="/sys/alert.css" rel="stylesheet" type="text/css" />
+      <link rel="manifest" href="manifest.json"/>
+      <link rel="icon" href="/images/logo.gif">
+      <meta property="og:title" content="frogie's arcade">
+      <meta name="theme-color" content="#00ffa6">
+      <meta name="msapplication-TileColor" content="#00ffa6">
+      <meta property="og:image" content="/images/logo.gif">
+      <meta name="description" content="the games just for you">
+      <script src="/sys/login.js"></script>
+      <meta property="og:description" content="the games just for you">
+      <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval' https://www.authpro.com https://www.googletagmanager.com https://maxcdn.bootstrapcdn.com https://cdnjs.cloudflare.com https://static.cloudflareinsights.com https://cdn.jsdelivr.net https://widgetbot.io https://docs.widgetbot.io 'unsafe-inline';">
+    <style>
+    body{
+        text-align: center;
+    }
+    header {
+        text-align: center;
+    }
+    .rainbowtitle {
+        display: inline-block;
+    }
+        h1{
+            color: #fff;
+        }
+    </style>
+</head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-43Q4DLBWP2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-43Q4DLBWP2');
+    </script>
+<body>
+    <script src="/sys/alert.js"></script>
+    <div class="message-box" id="messageBox"></div>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css'></script>
+    <script src='/jquery-1.11.1.min.js'></script>
+    <header>
+        <img class="logo" src="/images/logo.gif" onclick="window.location.href='/';">
+        <div class="navbar-right">
+            <button id="headerbtn" onclick="window.location.href='/math/index.html';">Unblocked</button></a>
+            <button id="headerbtn" onclick="window.location.href='/reading/';">Apps</button>
+            <button id="headerbtn" onclick="window.location.href='/partners.html';">Partners</button>
+        </div>
+    </header>
+    <div id="roddyrichheshomebox">
+        <div id="main">
+        <h1>frogie's arcade v3 beta</h1>
+
+              <button id="cloaker" onclick="openGame()">about:blank Cloaker (hides link from history, double click to activate)</button>
+              <script>
+                  function openGame(){
+              var urlObj = new window.URL(window.location.href);
+                var url = window.location;
+
+                if (url) {
+                    var win;
+
+                    document.querySelector('#cloaker').onclick = function() {
+                        if (win) {
+                            win.focus();
+                        } else {
+                            win = window.open();
+                            win.document.body.style.margin = '0';
+                            win.document.body.style.height = '100vh';
+                            var iframe = win.document.createElement('iframe');
+                            iframe.style.border = 'none';
+                            iframe.style.width = '100%';
+                            iframe.style.height = '100%';
+                            iframe.style.margin = '0';
+                            iframe.src = url;
+                            win.document.body.appendChild(iframe);
+                            window.location.replace("https://ixl.com");
+
+                            var interval = setInterval(function() {
+                                if (win.closed) {
+                                    clearInterval(interval);
+                                    win = undefined;
+
+                                }
+                            }, 500);
+
+
+                        }
+                    };
+                }
+                  }
+                </script>
+            <h3>motd: this is a beta! most things are subject to change. some games dont work, don't bother complaining.</h3>
+            <br>
+            <form id="uv-form">
+                <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/> 
+                <input id="uv-address" type="text" placeholder="whats on your mind?" class="form__input"/>
+              </form>
+            <div class="proxy-quicklinks">
+                <a href="reading/chatgpt.html"><img src="/images/apps/chatgpt.png" alt="game"></a>
+                <a href="reading/youtube.html"><img src="/images/apps/youtube.png" alt="game"></a>
+                <a href="reading/twitch.html"><img src="/images/apps/twitch.png" alt="game"></a>
+                <a href="reading/tiktok.html"><img src="/images/apps/tiktok.png" alt="game"></a>
+                <a href="reading/snapchat.html"><img src="/images/apps/snapchat.jpg" alt="game"></a>
+            </div>
+               <h3>wanna make your own links? goto<button id="linkmaker" onclick="window.open('https://github.com/FrogiesArcade/FrogiesArcade-v2-Portable/tree/main');">this github repository</button>to make them!</h3>
+            <br>
+            <button class="discord" onclick="window.open('https://discord.gg/fErn6KteQn');">join discord for more links</button>
+            <br>
+            <button id="linkmaker" onclick="window.location.href='credits.html';">Credits</button>
+            <button id="linkmaker" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdT9FozfO6ICoVKt7D0ooapMmjkmiZR_lYNT7fd8XewiSSyyg/viewform?embedded=true');">Game Submissions</button>
+            
+        </div>
+    </div>
+    <div id="particles-js"></div>
+    <script src="/particles.js"></script>
+    <script src="/app.js"></script>
+    <script src="/settings.js"></script>
+    <script src="/panic.js"></script>
+    <script src="/static/uv/uv.bundle.js" defer></script>
+    <script src="/static/uv/uv.config.js" defer></script>
+    <script src="/static/register-sw.js" defer></script>
+    <script src="/static/search.js" defer></script>
+    <script src="/static/index.js" defer></script>
+    <script src="/static/error.js" defer></script>
+</body>
+</html>
